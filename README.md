@@ -25,3 +25,8 @@ cd product2
 npm install
 node app.js
 ``` 
+
+## Mockshot
+
+![alt mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screenshot.png)
+
