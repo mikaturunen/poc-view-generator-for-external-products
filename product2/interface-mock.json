@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "endpoint": ""
+    },
+    "schema": {
+      "title": "Käyttäjätietojen päivitys.",
+      "description": "Voit päivittää käyttäjätiedot tällä lomakkeella",
+      "type": "object",
+      "required": [
+        "firstName",
+        "lastName"
+      ],
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "title": "Etunimi"
+        },
+        "country": {
+          "title": "Maa",
+          "type": "string",
+          "enum": [
+            "suomi",
+            "venäjä",
+            "kissamaa",
+            "koiramaa"
+          ],
+          "enumNames": [
+            "Suomi",
+            "Venäjä",
+            "Kissamaa",
+            "Koiramaa"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "title": "Jokin pidempi kuvaus"
+        },
+        "password": {
+          "type": "string",
+          "title": "Salasana",
+          "minLength": 3
+        },
+        "file": {
+          "type": "string",
+          "format": "data-url",
+          "title": "Uploadaa ainostaan supikoirakuvia"
+        }
+      }
+    },
+    "ui": {
+      "firstName": {
+        "ui:autofocus": true
+      },
+      "email": {
+        "ui:widget": "email"
+      },
+      "description": {
+        "ui:widget": "textarea"
+      },
+      "password": {
+        "ui:widget": "password",
+        "ui:help": "Vähintään 8 merkkiä."
+      }
+    },
+    "formData": {
+      "firstName": "SKELETOR",
+      "description": "Skeletor vallitsee!",
+      "password": "supikoira666",
+      "country": "kissamaa"
+    }
+}
+
