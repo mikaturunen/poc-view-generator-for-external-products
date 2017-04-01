@@ -1,0 +1,91 @@
+{
+	"cv": {
+		"personal": {
+			"firstName": "Mika",
+			"lastName": "Turunen",
+			"dateOfBirthMonth": 10,
+			"dateOfBirthDay": 7,
+			"dateOfBirthYear": 1984
+		},
+		"cover": "Architecture, technological decisions and evaluations. Leading the technical team and nurturing the talent in Checkout Finland.\n\nI work with our in-house team but also with our mother organisations teams from OP Labs, OP Kiihdyttämö and OP Pohjola group in general. Ecommerce, payment solutions, identity access management, multi-tier architectures, web technologies and infrastructure is the name of the game.\n\nI am the enabler between business, technology and sales.",
+		"experience": [{
+			"company": "Checkout Finland Oy",
+			"start": 124,
+			"end": null,
+			"locationCountry": "Finland",
+			"locationCity": "Tampere",
+			"title": "CTO",
+			"description": "Architecture, technological decisions and evaluations. Leading the technical team and nurturing the talent in Checkout Finland.\n\nI work with our in-house team but also with our mother organisations teams from OP Labs, OP Kiihdyttämö and OP Pohjola group in general. Ecommerce, payment solutions, identity access management, multi-tier architectures, web technologies and infrastructure is the name of the game.\n\nI am the enabler between business, technology and sales."
+		},
+		{
+			"company": "Digia Plc",
+			"start": 123,
+			"end": 124,
+			"locationCountry": "Finland",
+			"locationCity": "Tampere",
+			"title": "Systems Architect",
+			"description": "Strong communicator, enabler and a architect with a liking for doing the actual work instead of avoiding it. I tend to get mixed up with everything, including but not limited to technology evaluations, development work, DevOps, mentoring, leading by example and generally just having my hands in the dirt.\n\nMy forte's include the new wave of emerging web technologies, hybrid cloud solutions, integrations, multi-tier architectures and understanding the customers business domain as a whole. I do my best to understand the customer needs and foreseeing the actual work coming from it.\n\nI provide the outside of the norm solutions with a technological edge. Full stacks, hybrid stacks, angular, angular 2, web components, Polymer, AWS, OpenStack, Docker, Kontena, Kubernetes, Swarm, Weave, Node.js, Java and so on.. I work with a wide range of technologies and recognise them for their good and bad parts."
+		},
+		{
+			"company": "Cybercom Group: Cybercom Finland",
+			"start": 120,
+			"end": 123,
+			"locationCountry": "Finland",
+			"locationCity": "Tampere",
+			"title": "Solutions Architect",
+			"description": "You have a problem, we have a solution. Out side of the box thinker, technical solution provider and the glue between the customers and our sales. I help customers realise how different problems can be solved and how they should be solved in an efficient and cost effective manner. Cloud services, hosting, multi-tier architectures, project management, devops and development.\n\nAWS, Cybercom Cloud, latest web development trends, long-term web solutions, technology evaluation and helping to take the new technologies into use. I provide help on multiple levels from project management, to development and internal / external staff training for new technologies.\n\nI'm a strong communicator and do my best to lead by example, I'm passionate about what I do. Positive thinker and a problem solver.\n\nI also internally work as one of the Cybercom's Corporate Social Responsibility (CSR) ambassadors and put a lot of effort into Cybercom's sustainable work and development. Currently involved with ISO certificates and especially with the ISO 14001:2015."
+		},
+		{
+			"company": "Cybercom Group: Cybercom Finland",
+			"start": 118,
+			"end": 120,
+			"locationCountry": "Finland",
+			"locationCity": "Tampere",
+			"title": "Senior Software Designer",
+			"description": "Web technologies, graphics, time critical systems and consulting."
+		},
+		{
+			"company": "Pocum Oy",
+			"start": 110,
+			"end": 118,
+			"locationCountry": "Finland",
+			"locationCity": "Tampere",
+			"title": "Software Designer",
+			"description": "Web and cloud technologies, software as a service, integrations, supporting sales personnel and working with the customers."
+		},
+		{
+			"company": "Movial",
+			"start": 100,
+			"end": 110,
+			"locationCountry": "Finland",
+			"locationCity": "Helsinki",
+			"title": "Software Designer",
+			"description": "Cross-platform development, integration work and consulting. Mobile platform heavy and time critical systems. OpenGL, Graphics and audio in general."
+		},
+		{
+			"company": "EVTEK",
+			"start": 90,
+			"end": 100,
+			"locationCountry": "Finland",
+			"locationCity": "Espoo",
+			"title": "Software Designer",
+			"description": "Web technologies, cross-platform work."
+		}],
+		"education": [{
+			"degree": "Bachelor of Science in Computer Games Programming",
+			"fieldOfStudy": "Computer Games Programming",
+			"grade": "First class honors",
+			"start": 120,
+			"end": 123
+			
+		}],
+		"accomplishments": [
+
+		],
+		"hobbies": [
+
+		],
+		"removeBy": "",
+		"createdAt": ""
+	}
+}

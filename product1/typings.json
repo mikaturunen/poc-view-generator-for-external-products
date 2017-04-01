@@ -1,0 +1,9 @@
+{
+  "name": "product1",
+  "dependencies": {
+    "express": "registry:npm/express#4.14.0+20170217205433"
+  },
+  "globalDependencies": {
+    "require": "registry:dt/require#2.1.20+20160316155526"
+  }
+}
