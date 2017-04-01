@@ -8,6 +8,8 @@
  
  This way we can easily white label the product 2 into product 1's domain. This will also minimize the integration and bug hunting as it's always machine read and will allow for easy change management and all new features will automatically be enabled on the UI when product 2 finishes them.
  
+ The only obvious drawback from this method is that the product1 cannot make any super elaborate and dynamic interfaces from the machine read interface description but that's totally acceptable at this point as the main focus is on the quality of the integration and delivering the basic functionality to the customer from clean and functional interfaces.
+ 
 ## Running
 
 Both products in this PoC are just minimal node.js applications that require a node.js >= 6.1.0 to be installed. 
