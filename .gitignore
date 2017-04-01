@@ -1,0 +1,3 @@
+node_modules
+product1/src/**/*.js
+product2/src/**/*.js
