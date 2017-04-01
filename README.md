@@ -28,5 +28,7 @@ node app.js
 
 ## Mockshot
 
+Based on the rough idea from `product/interface-mock.json`.
+
 ![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screenshot.jpeg)
 
