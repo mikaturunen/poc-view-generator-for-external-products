@@ -38,5 +38,7 @@ Based on the rough idea from [product2/mock.json](https://github.com/mikaturunen
 
 ![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screen1.png)
 
+---
+
 ![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screen2.png)
 
