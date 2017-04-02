@@ -32,7 +32,11 @@ The PoC also contains a generic-view renderer built with `RE:DOM` (while I was p
 
 ## Mockshot
 
-Based on the rough idea from [product2/interface-mock.json](https://github.com/mikaturunen/poc-view-generator-for-external-products/blob/master/product2/interface-mock.json).
+Product1 is showing both it's own UI and the UI from Product2. Product2 is only showing its own UI.
 
-![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screenshot.jpeg)
+Based on the rough idea from [product2/mock.json](https://github.com/mikaturunen/poc-view-generator-for-external-products/blob/master/product2/interface-mock.json).
+
+![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screen1.jpeg)
+
+![mockshot](https://raw.githubusercontent.com/mikaturunen/poc-view-generator-for-external-products/master/generic-client/screen2.jpeg)
 
