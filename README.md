@@ -26,6 +26,10 @@ npm install
 node app.js
 ``` 
 
+Navigate to `localhost:3000` to open up Product 1 and have it call for Product 2's JSON interface description and render UI based on it. Navigate to `localhost:3001` to open up Product 2 and have it use the same JSON interface description to render the UI. 
+
+The PoC also contains a generic-view renderer built with `RE:DOM` (while I was playing with the PoC I decided to test out a new framework :smile:). Both of the products use the same renderer as I was lazy. Nothing special there, really. Just loads the UI JSON with a single REST call and renders view based on it. Would be even better to do it on server side to allow cache's to properly cache the view (if we want to optimize it).
+
 ## Mockshot
 
 Based on the rough idea from [product2/interface-mock.json](https://github.com/mikaturunen/poc-view-generator-for-external-products/blob/master/product2/interface-mock.json).
