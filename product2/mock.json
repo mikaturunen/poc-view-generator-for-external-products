@@ -1,0 +1,112 @@
+{    
+    "uiComment": "The interface description of how it should be rendered (what elements it contains)",
+    "uiComment2": "The 'html' of the ui elements always will be standard html5 elements.",
+    "uiComment3": "'value' property describes static ui elements like spans, labels and such.",
+
+    "ui": [{
+        "legend": "Product2", 
+        "html": "fieldset",
+        "children": [{
+            "id": "ServiceDescription",
+            "html": "label",
+            "for": "ProductInUsed",
+            "value": "Palvelu käytössä"
+        },
+        {
+            "id": "ProductInUsed",
+            "html": "input",
+            "type": "checkbox",
+            "value": "Palvelu on otettu käyttöön."
+        }]
+    },
+    {
+        "legend": "Delivery Service Options",
+        "html": "fieldset",
+        "children": [{
+            "id": "DeliveryServiceDescription",
+            "html": "label",
+            "value": "Valitse haluamasi toimituspalvelut."
+        },
+        {
+            "id": "PostiService",
+            "html": "input",
+            "type": "checkbox",
+            "value": "Postin normaalit palvelut"
+        },
+        {
+            "id": "MatkahuoltoService",
+            "html": "input",
+            "type": "checkbox",
+            "value": "Matkahuollon normaalit palvelut"
+        }]
+    },
+    {
+        "legend": "Additional Service Configuration",
+        "html": "fieldset",
+        "children": [{
+            "id": "AdditionalConfigurationDescription",
+            "html": "label",
+            "value": "Valitse käytettävät lisäpalvelut."
+        },
+        {
+            "id": "CalculateRealtimePrice",
+            "html": "input",
+            "type": "checkbox",
+            "value": "Laske hinnoittelu reaaliajassa"
+        },
+        {
+            "id": "UseDirectContracts",
+            "html": "input",
+            "type": "checkbox",
+            "value": "Käytä suoria sopimuksia"
+            
+        }]
+    },
+    {
+        "id": "RandomInputs",
+        "html": "fieldset",
+        "legend": "Random Stuff",
+        "children": [{
+            "id": "FirstNameLabel",
+            "html": "label",
+            "for": "FirstName",
+            "value": "First name"
+        },
+        {
+            "id": "FirstName",
+            "html": "input",
+            "type": "text"
+        },
+        {
+            "id": "LastNameLabel",
+            "html": "label",
+            "for": "LastName",
+            "value": "Last name"
+        },
+        {
+            "id": "LastName",
+            "html": "input",
+            "type": "text"
+        }]
+    },
+    {
+        "id": "SomeButtons",
+        "html": "fieldset",
+        "legend": "Some Buttons",
+        "children": [{
+            "id": "Something",
+            "html": "button",
+            "type": "button",
+            "value": "Do something - save?",
+            "meta": "save",
+            "comment": "Can be used to send the JSON over to the endpoint."
+        }]
+    }],
+    
+    "endpoint": "",
+
+    "endpointSchemaComment": "Schema for sending the content over to endpoint.",
+    "endpointSchema": {
+        "comment": "simple json schema to descripe what we want it all to look like. So we can easily validate it on both ends."
+    }
+}
