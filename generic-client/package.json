@@ -1,0 +1,31 @@
+{
+  "name": "generic-client",
+  "version": "0.0.1",
+  "description": "RE:DOM quick and dirty generic client",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node watch",
+    "build-css": "stylus -I node_modules/normalize-styl/ -u nib css/index.styl -c -o public/css/main.css",
+    "build-js": "rollup -c -f iife js/**.js -o public/js/main.js",
+    "uglify-js": "uglifyjs public/js/main.js -cm -o public/js/main.min.js",
+    "cp-assets": "cp -r images/* public/images/",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chokidar": "~1.6.1",
+    "nib": "~1.1.2",
+    "redom": "~1.8.0",
+    "rollup": "~0.37.0",
+    "rollup-plugin-buble": "~0.15.0",
+    "rollup-plugin-node-resolve": "~2.0.0",
+    "stylus": "~0.54.5",
+    "uglify-js": "~2.7.5"
+  },
+  "dependencies": {
+    "compression": "~1.6.2",
+    "express": "~4.14.0",
+    "normalize-styl": "^4.1.1"
+  }
+}
