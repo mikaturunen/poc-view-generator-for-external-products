@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const unirest = require('unirest')
 const app = express()
+const path = require('path')
 
 const host = process.env.HOST_PRODUCT1 ? process.env.HOST_PRODUCT1 : 'localhost'
 const port = process.env.PORT_PRODUCT1 ? process.env.PORT_PRODUCT1 : 3000
@@ -10,10 +11,12 @@ const hostForProduct2 = process.env.HOST_PRODUCT2 ? process.env.HOST_PRODUCT2 : 
 const portForProduct2 = process.env.PORT_PRODUCT2 ? process.env.PORT_PRODUCT2 : 3001
 
 app.use(bodyParser.json())
+app.use('/public', express.static(path.join(__dirname, '..', 'generic-client', 'public')));
+app.use('/services', express.static(path.join(__dirname, '..', 'generic-client', 'public', 'services')));
 
 app.get('/', (req, res) => {
-    // TODO send index.html and from that get the interface + render it or render it server side
-    res.json({ message: 'TODO product1 send index.html and from that get the interface + render it, or render it server side and send over' })
+    // NOTE only sending index.html to the root in this PoC 
+    res.sendFile(path.join(__dirname, '..', 'generic-client', 'public', 'index-product1.html'))
 })
 
 // we could (and should) also generate some sort of session management and/or regognition idea,
@@ -31,6 +34,7 @@ app.get('/extranet/interface', (req, res) => {
         .send({})
         .end(responseFromProduct2 => {
             console.log('Received extranet descriptions from external product(s).')
+            
             res.json(responseFromProduct2)
         })
 })
@@ -40,13 +44,16 @@ app.get('/extranet/interface', (req, res) => {
 app.post('/extranet/product2/save', (req, res) => {
     // TODO we should read the endpoint from the body as it's part of the original json meta data we got in extranet/interface get call from product2, but in this PoC we'll just hard code it for now
     
-    console.log('Sending changes to external product(s).')
+    // TODO read the actual json properties in front, currently it's just sending over { foo: 'bar' } as a PoC
+    
+    console.log('Sending changes to external product(s):', req.body)
     unirest
         .post(`http://${hostForProduct2}:${portForProduct2}/extranet/interface/save`)
         .headers({
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
         })
-        .send(req.body.product2)
+        .send(req.body)
         .end(response => {
             console.log('All changes saved successfully.')
             res.status(200).send()
